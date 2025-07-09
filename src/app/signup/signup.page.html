@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Register Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-img class="app-logo"
+           src="/assets/icon/logo-app.png"
+           alt="App icon"
+  ></ion-img>
+
+  <ion-item class="ion-text-center">
+    <ion-label>
+      <h1>Sign Up</h1>
+      <p class="ion-padding-vertical">Use proper information to continue</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="auto">
+        <ion-input label="Username" label-placement="stacked" fill="outline" placeholder="ex: johnny114"></ion-input>
+        <ion-input label="Password" type="password" label-placement="stacked" fill="outline" placeholder="ex: John2025$">
+          <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input>
+        <ion-input label-placement="stacked" fill="outline" placeholder="ex: johnny1142025@email.com">
+          <div slot="label">Email address <ion-text color="danger">(Required)</ion-text></div>
+        </ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button expand="block" class="create-button">Create Account</ion-button>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-text class="ion-text-center" style="display: block; width: 100%;">
+      Already have an Account?
+      <a routerLink="/login" style="font-weight: bold; text-decoration: none">Sign in</a>
+    </ion-text>
+  </ion-toolbar>
+</ion-footer>
+
+
