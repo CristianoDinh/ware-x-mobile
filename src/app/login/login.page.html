@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-img class="app-logo"
+    src="/assets/icon/logo-app.png"
+    alt="App icon"
+  ></ion-img>
+
+  <ion-item class="ion-text-center">
+    <ion-label>
+      <h1>Sign In</h1>
+      <p class="ion-padding-vertical">Enter valid username & password to continue</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="auto">
+        <ion-input label="Username" label-placement="floating" fill="outline" placeholder="Enter username"></ion-input>
+        <ion-input label="Password" label-placement="floating" fill="outline" placeholder="Enter password"></ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-text color="primary" class="ion-float-end">
+    <a routerLink="/recovery" style="font-weight: bold; text-decoration: none">Forget password</a>
+  </ion-text>
+  <ion-button expand="block" class="login-button">Login</ion-button>
+
+<!--  <ion-text class="ion-text-center" style="display: block; width: 100%;">-->
+<!--    Don't have an account?-->
+<!--    <a routerLink="/signup" style="font-weight: bold; color: var(&#45;&#45;ion-color-primary); text-decoration: none;">-->
+<!--      Sign Up-->
+<!--    </a>-->
+<!--  </ion-text>-->
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-text class="ion-text-center" style="display: block; width: 100%;">
+      Don't have an account?
+      <a routerLink="/signup" style="font-weight: bold; text-decoration: none">Sign Up</a>
+    </ion-text>
+  </ion-toolbar>
+</ion-footer>
+
+
